@@ -1,7 +1,8 @@
-import { Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
+import { CreateChatCompletionRequestDto } from './dto/create-chat-completion-request.dto';
 
-@Controller('openai')
+@Controller('api/v1/openai')
 export class OpenaiController {
-  @Post()
-  
+  @Post('chat-completion')
+  async createChatCompletion(@Body() dto: CreateChatCompletionRequestDto) {}
 }
