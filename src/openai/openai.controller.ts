@@ -4,5 +4,7 @@ import { CreateChatCompletionRequestDto } from './dto/create-chat-completion-req
 @Controller('api/v1/openai')
 export class OpenaiController {
   @Post('chat-completion')
-  async createChatCompletion(@Body() dto: CreateChatCompletionRequestDto) {}
+  async createChatCompletion(@Body() dto: CreateChatCompletionRequestDto) {
+    
+  }
 }
